@@ -9,6 +9,8 @@ function App() {
         <p>
           TaxUI - Tax Management System
         </p>
+
+        <h1> Welcome to Tax Management </h1>
        
       </header>
     </div>
