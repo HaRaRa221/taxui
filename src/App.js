@@ -1,18 +1,20 @@
-import logo from './logo.svg';
+//Chatbot App 
+import React from 'react';
+import { Chatbot} from 'react-chatbot-kit'; //Chatbot function
+
+
 import './App.css';
+
+import MessageParser  from './MessageParser'; //MessageParser function
+import ActionProvider from './ActionProvider'; //ActionProvider function
+import config from './config'; //config function
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          TaxUI - Tax Management System
-        </p>
-
-        <h1> Welcome to Tax Management </h1>
-       
-      </header>
+          <Chatbot config={config} MessageParser= {MessageParser} ActionProvider={ActionProvider}/>
+       </header>
     </div>
   );
 }
