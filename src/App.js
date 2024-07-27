@@ -1,7 +1,7 @@
 //Chatbot App 
 import React from 'react';
 import  Chatbot  from 'react-chatbot-kit'; //Chatbot function
-import 'react-chatbot-kit/build/mai n.css'; //Chatbot css
+import 'react-chatbot-kit/build/main.css'; //Chatbot css
 
 import config from './Chatbot/config.js';
 import MessageParser from './Chatbot/MessageParser.js';
