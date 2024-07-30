@@ -1,0 +1,19 @@
+.body {
+    padding-bottom: 15px;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.option-button {
+    background-color: #00ffff;
+    border: 1px solid #a10707;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
