@@ -4,15 +4,15 @@ import "./BegOptions.css";
 
 const BegOptions = (props) => {
     return (
-        <div className="body">
+        <div className="options">
         <div className="options-container">
             {props.options.map((option) => (
                 <div 
-                    className="option-button"
-                    key={option.id}
-                    onClick={option.handler}
+                className="option-button"
+                onClick={option.handler}
+                key={option.id}
                 >
-                    {option.name}
+                    {option.text}
                 </div>
             ))}
         </div>

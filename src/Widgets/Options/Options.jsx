@@ -10,8 +10,8 @@ const Options = (props) => {
             id: 1,
         },
         {
-            text: "What is the purpose of TaxUI?",
-            handler: props.actionProvider.handlePurpose,
+            text: "What documents do I need to file for IRS form 990?",
+            handler: props.actionProvider.handlePaperwork,
             id: 2,
         },
         {
