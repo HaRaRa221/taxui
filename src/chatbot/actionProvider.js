@@ -9,7 +9,7 @@ class ActionProvider {
     handleBegOptions = () => {
         const message = [this.createChatBotMessage(
           "Here are the following options for you:",
-          { widget: "begOptions", withAvatar: true }
+          { widget: "BegOptions", withAvatar: true }
         )];
     
     this.addMessageToBotState(message);
