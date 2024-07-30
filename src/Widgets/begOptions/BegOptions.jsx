@@ -2,7 +2,7 @@ import React from "react";
 
 import "./BegOptions.css";
 
-const begOptions = (props) => {
+const BegOptions = (props) => {
     return (
         <div className="body">
         <div className="options-container">
@@ -21,4 +21,4 @@ const begOptions = (props) => {
     
 };
 
-export default begOptions;
+export default BegOptions;

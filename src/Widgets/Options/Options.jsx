@@ -1,9 +1,9 @@
 import React from "react";
 
-import BegOptions from "../begOptions/BegOptions";
+import BegOptions from "../begOptions/BegOptions"
 
 const Options = (props) => { 
-    const begOptions = [
+    const BegOptions = [
         {
             text: "What is TaxUI?",
             handler: props.actionProvider.handleTaxUI,
