@@ -11,7 +11,7 @@ const config = {
     createChatBotMessage(`Hello, my name is ${botName}`),
     createChatBotMessage(`How can I help you today?`, 
       {
-        widget: "begOptions",
+        widget: "BegOptions",
         delay: 500,
     } ),
   ],
@@ -20,7 +20,7 @@ const config = {
   },
   widgets: [
     {
-      widgetName: "begOptions",
+      widgetName: "BegOptions",
       widgetFunc: (props) => <BegOptions {...props} />,
       mapStateToProps: ["options"],
     },
