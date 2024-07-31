@@ -2,6 +2,7 @@ class ActionProvider {
     constructor(createChatBotMessage, setStateFunc, createClientMessage) {
       this.createChatBotMessage = createChatBotMessage;
       this.setState = setStateFunc;
+      this.createClientMessage = createClientMessage;
       
 
     }
@@ -14,6 +15,10 @@ class ActionProvider {
     
     this.addMessageToState(message);
     
+  };
+
+  addMessageToState = (message) => {
+    this.setState((state) => ({ messages: [...state.messages, ...message] }));
   };
 
 
