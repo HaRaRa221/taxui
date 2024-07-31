@@ -2,11 +2,12 @@ import React from "react";
 
 import "./BegOptions.css";
 
+
 const BegOptions = (props) => {
     return (
         <div className="options">
         <div className="options-container">
-            {props.options.map((option) => (
+            {props.begOptions.map((option) => (
                 <div 
                 className="option-button"
                 onClick={option.handler}
