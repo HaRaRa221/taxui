@@ -1,6 +1,6 @@
 import React from "react";
 
-import BegOptions from "../begOptions/BegOptions"
+import BegOptions from "../begOptions/BegOptions";
 
 const Options = (props) => { 
     const BegOptions = [
@@ -25,7 +25,7 @@ const Options = (props) => {
             id: 4,
         },
     ];
-    return <begOptions options={BegOptions} title= "Select Options" {...props} />;
+    return <BegOptions options={BegOptions} title= "Select Options" {...props} />;
 };
 
 export default Options;

@@ -12,7 +12,7 @@ class ActionProvider {
           { widget: "BegOptions", withAvatar: true }
         )];
     
-    this.addMessageToBotState(message);
+    this.addMessageToState(message);
     
   };
 
