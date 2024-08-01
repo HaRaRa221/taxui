@@ -9,7 +9,7 @@ class messageParser {
       console.log(message);
 
       if (message.includes("hello")) {
-        this.actionProvider.handleBegOptions();
+        this.actionProvider.handlebegOptions();
       }
     }
 

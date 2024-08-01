@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./BegOptions.css";
+import "./begOptions.css";
 
 
-const BegOptions = (props) => {
+const begOptions = (props) => {
     return (
         <div className="begoptions">
         <div className="begoptions-container">
-            {props.BegOptions.map((option) => (
+            {props.begOptions.map((option) => (
                 <div 
                 className="option-button"
                 onClick={option.handler}
@@ -22,4 +22,4 @@ const BegOptions = (props) => {
     
 };
 
-export default BegOptions;
+export default begOptions;

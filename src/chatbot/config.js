@@ -20,9 +20,9 @@ const config = {
   },
   widgets: [
     {
-      widgetName: "begOptions",
+      widgetName: 'begOptions',
       widgetFunc: (props) => <begOptions {...props} />,
-      mapStateToProps: ["options"],
+      
     },
   ],
 };
