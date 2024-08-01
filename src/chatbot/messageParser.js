@@ -4,14 +4,18 @@ class MessageParser {
       this.state = state;
     }
   
-    parse(message) {
-      message= message.toLowerCase();
+    parse = (message) => {
       console.log(message);
-
-      if (message.includes("hello")) {
-        this.actionProvider.handlebegOptions();
+      const lowerCaseMessage = message.toLowerCase();
+  
+      if (lowerCaseMessage.includes("hello")) {
+        this.actionProvider.greet();
       }
-    }
+  
+      if (lowerCaseMessage.includes("irs form 990")) {
+        this.actionProvider.handleForm990();
+      }
+    };
 
   
   }

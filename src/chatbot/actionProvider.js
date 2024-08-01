@@ -5,6 +5,11 @@ class ActionProvider {
       this.createClientMessage = createClientMessage;
     }
 
+    greet() {
+      const greetingMessage = this.createChatBotMessage("Hello, how may I offer my services?");
+      this.updateChatbotState(greetingMessage);
+    }
+
 
   handleForm990 = () => { 
     const message = this.createChatBotMessage(
