@@ -1,7 +1,7 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 
 
-import BegOptions from "../Widgets/begOptions/BegOptions";
+import BegOptions from "../Widgets/BegOptions/BegOptions";
 
 const botName = "TaxUI";
 

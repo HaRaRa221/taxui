@@ -5,9 +5,9 @@ import "./BegOptions.css";
 
 const BegOptions = (props) => {
     return (
-        <div className="options">
-        <div className="options-container">
-            {props.begOptions.map((option) => (
+        <div className="begoptions">
+        <div className="begoptions-container">
+            {props.BegOptions.map((option) => (
                 <div 
                 className="option-button"
                 onClick={option.handler}
