@@ -1,7 +1,7 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 
 
-import BegOptions from "../Widgets/BegOptions/begOptionsBB";
+import begOptions from "../Widgets/begOptions/begOptions";
 
 const botName = "TaxUI";
 
@@ -11,7 +11,7 @@ const config = {
     createChatBotMessage(`Hello, my name is ${botName}`),
     createChatBotMessage(`How can I help you today?`, 
       {
-        widget: "BegOptions",
+        widget: "begOptions",
         delay: 500,
     } ),
   ],
@@ -20,8 +20,8 @@ const config = {
   },
   widgets: [
     {
-      widgetName: "BegOptions",
-      widgetFunc: (props) => <BegOptions {...props} />,
+      widgetName: "begOptions",
+      widgetFunc: (props) => <begOptions {...props} />,
       mapStateToProps: ["options"],
     },
   ],
