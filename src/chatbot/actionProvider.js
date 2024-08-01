@@ -3,8 +3,6 @@ class ActionProvider {
       this.createChatBotMessage = createChatBotMessage;
       this.setState = setStateFunc;
       this.createClientMessage = createClientMessage;
-      
-
     }
 
     
