@@ -5,13 +5,22 @@ class ActionProvider {
       this.createClientMessage = createClientMessage;
     }
 
-    
-    
-    
-    
- 
 
- 
+  handleForm990 = () => { 
+    const message = this.createChatBotMessage(
+      "Here are the forms you need for IRS Form 990:",
+      {
+        widget: "Menu",
+      }
+    );
+    this.updateChatbotState(message);
+  }
+    
+  updateChatbotState(message) {
+    this.setState(prevState => ({
+      ...prevState, messages: [...prevState.messages, message]
+    }))
+  }
 
   
 }

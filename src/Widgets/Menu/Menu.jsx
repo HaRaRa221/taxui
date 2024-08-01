@@ -7,7 +7,7 @@ const Menu = (props) => {
     const options = [
         {
             text: "What forms do I need for IRS Form 990?",
-            handler: () => {},
+            handler: props.actionProvider.handleForm990,
             id: 1,
         },
         {

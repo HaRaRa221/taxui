@@ -1,13 +1,16 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 
-
+import Menu from "../components/Menu/Menu";
 
 const botName = "TaxUI";
 
 const config = {
   botName: botName,
   initialMessages: [
-    createChatBotMessage(`Hello, my name is ${botName}`),
+    createChatBotMessage(`Hello, how may I offer my services?`, 
+      {
+        widgets: "Menu",
+      }),
   
   ],
   customStyles: {
@@ -21,7 +24,8 @@ const config = {
   
   widgets: [
     {
-      
+      widgetName: "Menu",
+      widgetFunc: (props) => <Menu {...props} />,
       
     },
   ],
