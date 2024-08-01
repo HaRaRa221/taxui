@@ -1,4 +1,12 @@
-.options-button {
-
-    
+.options-container {
+    display: grid;
+    flex-wrap: wrap;
+}
+.option-button {
+    margin: 5px;
+    border-radius: 25px;
+    padding: 8px;
+    border-color: teal;
+    background: transparent;
+    text-align: center;
 }
