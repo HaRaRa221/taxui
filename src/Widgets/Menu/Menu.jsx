@@ -6,7 +6,7 @@ import './Menu.css';
 const Menu = (props) => {
     const options = [
         {
-            text: "What forms do I need for IRS Form 990?",
+            text: "What forms are needed for IRS Form 990?",
             handler: props.actionProvider.handleForm990,
             id: 1,
         },

@@ -1,6 +1,7 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 
 import Menu from "../Widgets/Menu/Menu.jsx";
+import FormInfo from "../Widgets/FormInfo/FormInfo.jsx";
 
 const botName = "TaxUI";
 
@@ -9,7 +10,9 @@ const config = {
   initialMessages: [
     createChatBotMessage(`Hello, how may I offer my services?`, 
       {
-        widgets: "menu",
+        widget: "menu",
+        delay: 500,
+        withAvatar: true,
       }),
   
   ],
@@ -21,6 +24,7 @@ const config = {
       backgroundColor: "#68CC21",
     },
   },
+
   
   widgets: [
     {
@@ -28,6 +32,10 @@ const config = {
       widgetFunc: (props) => <Menu {...props} />,
       
     },
+    {
+      widgetName: "FormInfo",
+      widgetFunc: (props) => <FormInfo {...props} />,
+    }
   ],
 };
 
