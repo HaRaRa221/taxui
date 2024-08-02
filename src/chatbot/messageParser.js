@@ -9,11 +9,11 @@ class MessageParser {
       const lowerCaseMessage = message.toLowerCase();
   
       if (lowerCaseMessage.includes("hello")) {
-        this.actionProvider.greet();
+        return this.actionProvider.greet();
       }
   
       if (lowerCaseMessage.includes("irs form 990")) {
-        this.actionProvider.handleForm990();
+        return this.actionProvider.handleForm990();
       }
     };
 
