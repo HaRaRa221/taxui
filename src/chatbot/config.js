@@ -24,17 +24,23 @@ const config = {
       backgroundColor: "#68CC21",
     },
   },
+  state : {
+    gist: '',
+
+  },
 
   
   widgets: [
     {
       widgetName: "menu",
       widgetFunc: (props) => <Menu {...props} />,
+      mapStateToProps: ["gist"],
       
     },
     {
-      widgetName: "FormInfo",
+      widgetName: "formInfo",
       widgetFunc: (props) => <FormInfo {...props} />,
+      mapStateToProps: ["gist"],
     }
   ],
 };

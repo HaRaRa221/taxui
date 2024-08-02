@@ -9,13 +9,8 @@ const FormInfo = (props) => {
         'Schedule E', 
         'Schedule F', 
         'Schedule G', 
-        'Schedule H',  
-        'Schedule I', 
-        'Schedule J', 
-        'Schedule K', 
-        'Schedule L', 
-        'Schedule M', 
-        'Schedule N',
+        'Schedule H'  
+       
     ];
 
     const form990Markup = NinetyInfo.map((info) => (

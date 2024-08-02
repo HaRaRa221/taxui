@@ -1,3 +1,4 @@
+
 class ActionProvider {
     constructor(createChatBotMessage, setStateFunc, createClientMessage) {
       this.createChatBotMessage = createChatBotMessage;
@@ -16,6 +17,7 @@ class ActionProvider {
       "Here are the forms you need for IRS Form 990:",
       {
         widget: "FormInfo",
+        withAvatar: true,
       }
     );
     this.updateChatbotState(message);
