@@ -16,7 +16,7 @@ class ActionProvider {
     const message = this.createChatBotMessage(
       "Here are the forms you need for IRS Form 990:",
       {
-        widget: "FormInfo",
+        widget: "formInfo",
         withAvatar: true,
       }
     );
