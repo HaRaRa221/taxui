@@ -14,7 +14,7 @@ class ActionProvider {
 
   handleForm990 = () => { 
     const message = this.createChatBotMessage(
-      "Here are the forms you need for IRS Form 990:",
+      "Here are the forms you need for IRS Form 990: Schedule A, Schedule B, Schedule C, Schedule D, Schedule E, Schedule F, Schedule G, Schedule H",
       {
         widget: "formInfo",
         withAvatar: true,
